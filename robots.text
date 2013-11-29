@@ -1,4 +1,0 @@
-Sitemap: /sitemap.xml
-User-agent: *
-Disallow: /blog <!-- This makes this 'Blog' page unsearchable-->
-<meta name="robots" content="noindex, nofollow"> <!-- This is for SEO. Must be put on every page to work. -->
