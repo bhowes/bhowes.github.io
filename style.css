@@ -44,7 +44,7 @@ p{
 	color: #542437;
 }
 
-#logo {
+.logo {
 	margin: 2em;
 	float: left;
 } 
@@ -61,7 +61,7 @@ p{
 }
 .navbuttons li{
 	float: left;
-	padding:0 0 0 70px;
+	padding:0 0 0 40px;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -163,7 +163,45 @@ label {
 
 /*PORTFOLIO*/
 
+/*MEDIA QUERIES*/
+ @media only screen and (max-width: 735px) {
+
+
+
+	.logo {
+		margin: 2em 0 0 0 ;
+		float:none;
+		width: 100%;
+		text-align: center;
+
+		}
+
+	.navbuttons li {
+		margin: 1em auto;
+		text-align: center;
+	}
+
+
+	.btn {
+		clear: both;
+		outline: 1px solid #003d79;
+		border: 1px solid #003d79;
+	}
+
+	.btn_current {
+		margin: 0 0 6px;
+		border: 1px solid #003d79;
+	}
+ 
+@media only screen and (min-width: 769px) {
+	.btn {
+		padding: 1em 0;
+		margin: 1em .25em;
+		width: 7.45em;
+		border-radius: 0.375em;
+	}
+}
+
 
 /*FOOTER*/
-
 
