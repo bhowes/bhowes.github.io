@@ -19,6 +19,7 @@ p{
 		height: auto !important;
 		height: 100%;
 		margin: 0 auto -8em;
+		padding:2em;
 	}
 
 #main {
@@ -26,6 +27,7 @@ p{
 			max-width: 60em;
 			margin: 0 auto;
 		}
+
 
 
 /*NAV & BUTTONS*/
@@ -93,6 +95,8 @@ p{
 	font-variant: bold;
 	color: #D95B43;
 	line-height: 1.2em;
+	padding-right: 2em;
+
 }
 
 .resumebutton{
@@ -176,8 +180,17 @@ label {
 
 		}
 
-	.navbuttons li {
-		margin: 1em auto;
+	.navbuttons {
+		margin: 4em 10%;
+		float: left;
+		text-align: 
+		width: 90%;
+	}
+
+	.aboutphoto {
+
+		float:none;
+
 		text-align: center;
 	}
 
