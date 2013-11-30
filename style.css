@@ -91,13 +91,17 @@ p{
 .bigtext{
 	font-size: 2em;
 	font-variant: bold;
-	color: #542437;
+	color: #D95B43;
+	line-height: 1.2em;
 }
 
 .resumebutton{
 	color: #542437;
 	text-decoration: underline;
 }
+.resumebutton:hover{
+	cursor:pointer;
+	color: #D95B43;
 
 /*FORM*/
 
@@ -120,7 +124,13 @@ form{
 	font-family: Helvetica, sans-serif;
 	font-size: 1.2em;
 	float: center;
+	border: dotted;
+	border-width: 2px;
+	border-color: #7D7E81;
+}
 
+#contact-area input:focus, #contact-area textarea:focus {
+	outline: none;
 }
 
 #contact-area textarea {
@@ -148,7 +158,12 @@ label {
 	text-align: left;
 	width: 100%;
 	padding: 10px 0 10px 0px  ;
+	color: #542437;
 }
 
+/*PORTFOLIO*/
+
+
+/*FOOTER*/
 
 
