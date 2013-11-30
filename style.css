@@ -168,7 +168,7 @@ label {
 /*PORTFOLIO*/
 
 /*MEDIA QUERIES*/
- @media only screen and (max-width: 735px) {
+ @media only screen and (max-width: 800px) {
 
 
 
@@ -183,15 +183,15 @@ label {
 	.navbuttons {
 		margin: 4em 10%;
 		float: left;
-		text-align: 
+		text-align:center;
 		width: 90%;
 	}
 
 	.aboutphoto {
 
 		float:none;
-
 		text-align: center;
+		margin: -4em 0 2em 0;
 	}
 
 
