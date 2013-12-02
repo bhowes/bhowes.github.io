@@ -66,6 +66,12 @@ p{
 	font-family: 'Open Sans', sans-serif;
 }
 
+/*PORTFOLIO*/
+.portfolio{
+ 
+
+
+}
 
 /* ABOUT */
 .about{
@@ -142,9 +148,12 @@ form{
 	font-family: Helvetica, sans-serif;
 	font-size: 1.2em;
 	float: center;
-	border: dotted;
+	border-bottom: dotted;
 	border-width: 2px;
-	border-color: #7D7E81;
+	border-color: #d3d3d3;
+	border-top: none;
+	border-left:none;
+	border-right: none;
 }
 
 #contact-area input:focus, #contact-area textarea:focus {
