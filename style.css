@@ -54,7 +54,6 @@ p{
 .navbuttons{
 	float: right;
 	list-style: none;
-	margin: 0;
 	text-align: right;
 	margin: 2em;
 	text-decoration: none;
@@ -102,10 +101,25 @@ p{
 .resumebutton{
 	color: #542437;
 	text-decoration: underline;
+	float: right;
 }
+
 .resumebutton:hover{
 	cursor:pointer;
 	color: #D95B43;
+}
+
+.underlinedbutton{
+	color: #542437;
+	text-decoration: underline;
+}
+
+.underlinedbutton:hover{
+	cursor:pointer;
+	color: #D95B43;
+}
+
+
 
 /*FORM*/
 
@@ -181,10 +195,32 @@ label {
 		}
 
 	.navbuttons {
-		margin: 4em 10%;
-		float: left;
+		margin: 1em 20%;
 		text-align:center;
-		width: 90%;
+		width: 60%;
+	}
+
+	.navbuttons li{
+		float: none;
+		padding:10px 0 10px 0;
+		background-color: #d3d3d3;
+		border: solid;
+		border-color: white;
+		border-radius:1em;
+	}
+
+	.button:hover{
+		cursor:pointer;
+		color: #dd2766;
+	}
+
+	.activebutton{
+		cursor:pointer;
+		color: #ffffff;
+	}
+
+	.button{
+		color: #542437;
 	}
 
 	.aboutphoto {
