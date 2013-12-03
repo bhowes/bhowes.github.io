@@ -190,7 +190,7 @@ label {
 
 
 /*MEDIA QUERIES*/
- @media only screen and (device-width: 800px) {
+ @media only screen and (max-width: 800px) {
 
 
 
