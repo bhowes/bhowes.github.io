@@ -47,7 +47,7 @@ p{
 }
 
 .logo {
-	margin: 2em;
+	margin: 2em 0 2em 0;
 	float: left;
 } 
 
@@ -55,7 +55,7 @@ p{
 	float: right;
 	list-style: none;
 	text-align: right;
-	margin: 2em;
+	margin: 2em 0 2em 0;
 	text-decoration: none;
 	
 
@@ -190,15 +190,16 @@ label {
 
 
 /*MEDIA QUERIES*/
- @media only screen and (max-width: 800px) {
+ @media only screen and (device-width: 800px) {
 
 
 
 	.logo {
-		margin: 2em 0 0 0 ;
+		margin: 2em 5% 0 5% ;
 		float:none;
-		width: 100%;
+		width: 90%;
 		text-align: center;
+		clear:left;
 
 		}
 
@@ -233,9 +234,10 @@ label {
 
 	.aboutphoto {
 
-		float:none;
+		float:center;
 		text-align: center;
 		margin: -4em 0 2em 0;
+		
 	}
 
 
@@ -249,15 +251,7 @@ label {
 		margin: 0 0 6px;
 		border: 1px solid #003d79;
 	}
- 
-@media only screen and (min-width: 769px) {
-	.btn {
-		padding: 1em 0;
-		margin: 1em .25em;
-		width: 7.45em;
-		border-radius: 0.375em;
-	}
-}
+
 
 
 /*FOOTER*/
