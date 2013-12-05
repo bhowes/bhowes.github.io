@@ -8,10 +8,19 @@ a {
 }
 
 p{
-	font-family: 'Open Sans', sans-serif;
-	color:black;
+	font-family: 'Karla', sans-serif;
+	color:#666666;
 	line-height: 1.6em;	
 	text-decoration: none;
+}
+
+h1{
+	font-size: 2em;
+	color: #012059;
+	line-height: 1.2em;
+	padding-right: 0;
+	font-family: 'Karla', sans-serif;
+
 }
 
 #wrap {
@@ -32,22 +41,32 @@ p{
 
 /*NAV & BUTTONS*/
 
+#navigation {
+	clear:both;
+	display: block;
+	height: 170px;
+	border-bottom: 1px solid #ececec;
+	margin: 0;
+	width: 100%;
+}
+
 .button:hover{
 	cursor:pointer;
-	color: #D95B43;
+	color:#666666;
 }
 
 .activebutton{
 	cursor:pointer;
-	color: #ECD078;
+	color: #012059;
 }
 
+
 .button{
-	color: #542437;
+	color: #666666;
 }
 
 .logo {
-	margin: 2em 0 2em 0;
+	margin: 1em 0 2em 0;
 	float: left;
 } 
 
@@ -55,22 +74,43 @@ p{
 	float: right;
 	list-style: none;
 	text-align: right;
-	margin: 2em 0 2em 0;
+	margin: 3em 0 2em 0;
 	text-decoration: none;
-	
+	text-transform: uppercase;
+	font-size: 1em;
+	width: 300px;
 
 }
+
+.navbuttons ul{
+	margin:0;
+}
+
 .navbuttons li{
 	float: left;
 	padding:0 0 0 40px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Karla', sans-serif;
 }
 
 /*PORTFOLIO*/
-.portfolioimage{
- position: relative;
- margin: 0 auto;
- width: 100%;
+.squarerows{
+	 margin: 0 auto;
+	 width: 100%;
+	 min-height: 300px;
+	 text-align: center;
+	 line-height: 4em;
+	 overflow: hidden;
+	 letter-spacing: 1.5em;
+	 padding: 2em 0 0 0;
+
+}
+
+
+.squares{
+	width: 300px;
+	height: 225px;
+	display: inline-block;
+
 }
 
 /* ABOUT */
@@ -83,74 +123,72 @@ p{
 .aboutphoto{
 	position: relative;
 	float: left;
-	padding: 0 2em;
+	padding: 0 2em 12em 0;
 	cursor: none;
 }
 
 #abouttext{
 	position: relative;
 	padding: 0em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Karla', sans-serif;
 	color:black;
 	line-height: 1.6em;	
 }
 
-.bigtext{
-	font-size: 2em;
-	font-variant: bold;
-	color: #D95B43;
-	line-height: 1.2em;
-	padding-right: 0;
 
-}
 
 .resumebutton{
-	color: #542437;
-	text-decoration: underline;
-	float: right;
+	color: #012059;
+	text-decoration: none;
+	float: left;
+	margin-bottom: 50px;
 }
 
 .resumebutton:hover{
 	cursor:pointer;
-	color: #D95B43;
+	color: #012059;
 }
 
 .underlinedbutton{
-	color: #542437;
-	text-decoration: underline;
+	color: #012059;
+	/*text-decoration: underline;*/
 }
 
 .underlinedbutton:hover{
 	cursor:pointer;
-	color: #D95B43;
+	color: #012059;
 }
 
+/*#abouttext h1:after {
+			color: #212121;
+			content: "• • •";
+			display: block;
+			text-align: center;
+			font-size: 17px;
+			font-weight: 500;
+			letter-spacing: 0.22em;
+			padding: 8px 0 5px;
+			margin-bottom: 0px;
+		}
 
+*/
 
-/*FORM*/
+/* CONTACT FORM*/
 
-
-}
-
-form{
-	float: center;
-
-
-}
 #contact-area{
 	width: 75%;
 	margin: 0 auto;
-	padding-top: 230px;
+	padding-top: 5em;
+	font-family: 'Karla', sans-serif;
+
 }
 
 #contact-area input, #contact-area textarea {
 	width: 100%;
-	font-family: Helvetica, sans-serif;
-	font-size: 1.2em;
-	float: center;
-	border-bottom: dotted;
-	border-width: 2px;
-	border-color: #d3d3d3;
+	font-family: 'Karla', sans-serif;
+	font-size: 1em;
+	color: gray;
+	border-bottom: 2px solid #ececec;
 	border-top: none;
 	border-left:none;
 	border-right: none;
@@ -164,19 +202,60 @@ form{
 	height: 100px;
 }
 
-#contact-area input.submit-button {
-	width: 100px;
-	float: left;
+#contact-area input .placeholder {
+	background: url(http://www.trustii.com/trustii/images/favicon_fb.png);
 }
 
-.submit-button {
-	background-color: #542437;
+
+/* Insert Arrow as placeholder in contact form*/
+input[type="text"]:-moz-placeholder{
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	}			
+input[type="text"]:-ms-input-placeholderm{
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	}			
+input[type="text"]::-webkit-input-placeholder{
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	}
+
+textarea:-moz-placeholder{
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	}			
+textarea:-ms-input-placeholderm{
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	}			
+textarea::-webkit-input-placeholder{
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	}
+/*Arrow*/
+
+
+
+#contact-area .submit-button {
+	width: 100px;
+	float: left;
+	background-color: #012059;
 	color: white; 
 	border: none;
 	outline: none;
 	padding: 10px 5px;
 	margin: 15px 0 0 0;
-
+	font-family: 'Karla', sans-serif;
+	font-size: 1em;
+	border-radius: 1em;
+	text-align: center;
 }
 
 
@@ -184,16 +263,38 @@ label {
 	float: left;
 	text-align: left;
 	width: 100%;
-	padding: 10px 0 10px 0px  ;
-	color: #542437;
+	padding: 15px 0 7px 0px  ;
+	color: #012059;
+	font-size: 1.1em;
+
+}
+/*FOOTER*/
+
+
+#footer{
+	position: relative;
+	width:100%;
+	height: 70px;
+	background-color: #eeeeee;
+	bottom:0;
+	text-align: center;
+	padding-top: 10px;
+	margin: 225px 0 0 0;
+
+
 }
 
 
 /*MEDIA QUERIES*/
  @media only screen and (max-width: 800px) {
 
-
-
+ 	p{
+ 		color:#666666;
+ 	}
+ 	h1{
+ 		text-align: center;
+ 		padding-top: 1em;
+ 	}
 	.logo {
 		margin: 2em 5% 0 5% ;
 		float:none;
@@ -218,9 +319,13 @@ label {
 		border-radius:1em;
 	}
 
+	#navigation{
+		border: none;
+	}
+
 	.button:hover{
 		cursor:pointer;
-		color: #dd2766;
+		color: #012059;
 	}
 
 	.activebutton{
@@ -229,7 +334,7 @@ label {
 	}
 
 	.button{
-		color: #542437;
+		color: #012059;
 	}
 
 	.aboutphoto {
@@ -237,6 +342,7 @@ label {
 		float:center;
 		text-align: center;
 		margin: -4em 0 2em 0;
+		padding:0;
 		
 	}
 
@@ -253,5 +359,5 @@ label {
 
 
 
-/*FOOTER*/
+
 
