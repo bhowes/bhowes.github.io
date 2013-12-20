@@ -105,6 +105,12 @@ h1{
 
 }
 
+.squares:hover{
+	opacity: .5%;
+	border: 5px black;
+	cursor:pointer; 
+
+}
 
 .squares{
 	width: 300px;
@@ -112,6 +118,8 @@ h1{
 	display: inline-block;
 
 }
+
+
 
 /* ABOUT */
 .about{
