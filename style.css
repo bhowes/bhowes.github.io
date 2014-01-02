@@ -94,21 +94,13 @@ h1{
 
 /*PORTFOLIO*/
 .squarerows{
-	 margin: 0 auto;
+
 	 width: 100%;
 	 min-height: 300px;
-	 text-align: center;
-	 line-height: 4em;
 	 overflow: hidden;
-	 letter-spacing: 1.5em;
 	 padding: 2em 0 0 0;
-
-}
-
-.squares:hover {
-	opacity: .5%;
-	border: 5px black;
-	cursor:pointer; 
+	 position: relative;
+	 margin: 0 1% 0 1%
 
 }
 
@@ -117,6 +109,32 @@ h1{
 	height: 225px;
 	display: inline-block;
 
+}
+
+.panorama{
+	background:url(images/work/Panorama_2013_telecabine.png);
+	width: 300px;
+	height: 225px;
+	display: inline-block;
+}
+
+.panorama:hover{
+	opacity:.75;
+	cursor:pointer;
+
+}
+
+.panorama:hover:after{
+    background: #fff;
+    color: #000;
+    content: attr(title);
+    font-size: .85em;
+    font-family: 'Karla', sans-serif;
+    position: absolute;
+    margin: 50px 0 0 0;
+	padding: 2em 0 2em 0;
+	text-align: center;
+	width: 300px;
 }
 
 
