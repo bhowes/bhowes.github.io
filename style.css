@@ -367,9 +367,8 @@ label {
 
 		background: url(images/logo_xsmall.png);
 		background-repeat: no-repeat;
-		background-origin: center;
 		text-align: center;
-		margin:0 auto;
+		margin:2em 20% 0 20%;
 		width: 200px;
 	}
 
