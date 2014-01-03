@@ -72,6 +72,9 @@ li {
 .logo {
 	margin: 1em 0 2em 0;
 	float: left;
+	width:300px;
+	height:100px;
+	background: url(images/logo_small.png);
 } 
 
 .navbuttons{
@@ -106,7 +109,6 @@ li {
 	 padding: 2em 0 0 0;
 	 position: relative;
 	 display: block;
-	 margin: 0 auto;
 
 }
 
@@ -164,30 +166,6 @@ div.squares a {
 
 }
 
-.panorama:hover{
-	opacity:.75;
-	cursor:pointer;
-
-}
-
-.panorama:hover:after{
-    background: #fff;
-    color: #000;
-    content: attr(title);
-    font-size: .85em;
-    font-family: 'Karla', sans-serif;
-    position: absolute;
-    margin: 50px 0 0 0;
-	padding: 2em 0 2em 0;
-	text-align: center;
-	width: 300px;
-}
-
-.panorama{
-	background:url(images/work/Panorama_2013_telecabine.png);
-
-}
-
 .guidebook {
 	background: url(images/work/guidebook_thumb.png)
 }
@@ -206,9 +184,9 @@ div.squares a {
     font-family: 'Karla', sans-serif;
     position: absolute;
     margin: 50px 0 0 0;
-	padding: 2em 0 2em 0;
+	padding: 2em 0em 2em 0em;
 	text-align: center;
-	width: 300px;
+	width:100%;
 }
 
 
@@ -386,16 +364,17 @@ label {
  		padding-top: 1em;
  	}
 	.logo {
-		margin: 2em 5% 0 5% ;
-		float:none;
-		width: 90%;
-		text-align: center;
-		clear:left;
 
-		}
+		background: url(images/logo_xsmall.png);
+		background-repeat: no-repeat;
+		background-origin: center;
+		text-align: center;
+		margin:0 auto;
+		width: 200px;
+	}
 
 	.navbuttons {
-		margin: 1em 20%;
+		margin: .6em 20%;
 		text-align:center;
 		width: 60%;
 	}
