@@ -162,12 +162,16 @@ div.squares a {
 }
 
 .panorama{
-	background:url(images/work/Panorama_2013_telecabine.png);
+	background:url(images/work/panorama_thumb.png);
 
 }
 
 .guidebook {
 	background: url(images/work/guidebook_thumb.png)
+}
+
+.v3 {
+	background: url(images/work/V3_thumb.png)
 }
 
 .squares:hover{
@@ -379,9 +383,10 @@ label {
 	}
 
 	.navbuttons {
-		margin: 0 20% 0 0;
+		margin: 0 20% 2em 20%;
 		text-align:center;
 		width: 60%;
+
 	}
 
 	.navbuttons li{
@@ -391,10 +396,12 @@ label {
 		border: solid;
 		border-color: white;
 		border-radius:1em;
+		display:block;
 	}
 
 	#navigation{
 		border: none;
+		display:block;
 	}
 
 	.button:hover{
