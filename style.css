@@ -174,9 +174,14 @@ div.squares a {
 	background: url(images/work/V3_thumb.png)
 }
 
+.digz {
+	background: url(images/work/BTP_thumb.png);
+}
+
 .squares:hover{
-	opacity:.75;
+	opacity:.65;
 	cursor:pointer;
+	transition: opacity .5s ease-out;
 
 }
 
