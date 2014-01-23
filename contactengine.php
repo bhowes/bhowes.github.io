@@ -1,21 +1,15 @@
-<?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'From: Brittany Howes'; 
-    $to = 'brittany.howes@gmail.com'; 
-    $subject = 'Hello';
-    $human = $_POST['human'];
-			
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-				
-    if ($_POST['submit'] && $human == '4') {				 
-        if (mail ($to, $subject, $body, $from)) { 
-	    echo '<p>Your message has been sent!</p>';
-	} else { 
-	    echo '<p>Something went wrong, go back and try again!</p>'; 
-	} 
-    } else if ($_POST['submit'] && $human != '4') {
-	echo '<p>You answered the anti-spam question incorrectly!</p>';
-    }
+<?php $name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formcontent="From: $name \n Message: $message";
+$recipient = "brittany.howes@gmail.com"<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script>";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Thank You!";
 ?>
+ 
