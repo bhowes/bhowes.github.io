@@ -178,6 +178,14 @@ div.squares a {
 	background: url(images/work/BTP_thumb.png);
 }
 
+.logos {
+	background: url(images/work/Logo_thumb.jpg);
+}
+
+.posters {
+	background: url(images/work/Poster_thumb.jpg)
+}
+
 .squares:hover{
 	opacity:.65;
 	cursor:pointer;
