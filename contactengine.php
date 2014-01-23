@@ -3,9 +3,9 @@
 $myemail = "brittany.howes@gmail.com";
 
 /* Check all form inputs using check_input function */
-$name = check_input($_POST['name'], "Enter your name");
+$name = check_input($_POST['name']);
 $email = check_input($_POST['email']);
-$message = check_input($_POST['message'], "Write your message");
+$message = check_input($_POST['message']);
 
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
