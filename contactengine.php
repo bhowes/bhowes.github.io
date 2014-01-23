@@ -1,15 +1,61 @@
-<?php $name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "brittany.howes@gmail.com"<script type="text/javascript">
-/* <![CDATA[ */
-(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
-/* ]]> */
-</script>";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
+<?php
+/* Set e-mail recipient */
+$myemail = "brittany.howes@gmail.com";
+
+/* Check all form inputs using check_input function */
+$name = check_input($_POST['name'], "Enter your name");
+$email = check_input($_POST['email']);
+$message = check_input($_POST['message'], "Write your message");
+
+/* If e-mail is not valid show error message */
+if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
+{
+show_error("E-mail address not valid");
+}
+/* Let's prepare the message for the e-mail */
+$message = "
+
+Name: $name
+E-mail: $email
+
+Message:
+$message
+
+";
+
+/* Send the message using mail() function */
+mail($myemail, $subject, $message);
+
+/* Redirect visitor to the thank you page */
+header('Location: thanks.html');
+exit();
+
+/* Functions we used */
+function check_input($data, $problem='')
+{
+$data = trim($data);
+$data = stripslashes($data);
+$data = htmlspecialchars($data);
+if ($problem && strlen($data) == 0)
+{
+show_error($problem);
+}
+return $data;
+}
+
+function show_error($myError)
+{
 ?>
- 
+<html>
+<body>
+
+<p>Please correct the following error:</p>
+<strong><?php echo $myError; ?></strong>
+<p>Hit the back button and try again</p>
+
+</body>
+</html>
+<?php
+exit();
+}
+?>
