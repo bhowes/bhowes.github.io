@@ -104,13 +104,15 @@ li {
 .squarerows{
 
 	 width: 100%;
-	 min-height: 300px;
 	 overflow: hidden;
 	 padding: 2em 0 0 0;
 	 position: relative;
 	 display: block;
+	 text-align: center;
 
 }
+
+
 
 .squares{
 	width: 300px;
@@ -119,6 +121,7 @@ li {
 	margin: .5em;
 	background:url(images/box.png);
 	position: relative;
+	text-align: center;
 }
 
 /*This makes the portfolio square divs into links*/
@@ -133,6 +136,24 @@ div.squares a {
     background-color: #FFF; /* Fix to make div clickable in IE */
     opacity: 0; /* Fix to make div clickable in IE */
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+
+
+
+}
+
+/*This makes the logo divs into a link*/
+div.logo a {
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    background: green;
 
 
 
@@ -200,9 +221,8 @@ div.squares a {
     font-size: .85em;
     font-family: 'Karla', sans-serif;
     position: absolute;
-    margin: 50px 0 0 0;
+    margin: 50px 0 0 -150px;
 	padding: 2em 0em 2em 0em;
-	text-align: center;
 	width:100%;
 }
 
