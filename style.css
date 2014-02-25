@@ -31,8 +31,8 @@ li {
 		min-height: 100%;
 		height: auto !important;
 		height: 100%;
-		margin: 0 auto -8em;
-		padding:2em;
+		margin: 0 auto -5em;
+		padding-top:2em;
 	}
 
 #main {
@@ -388,16 +388,31 @@ label {
 #footer{
 	position: relative;
 	width:100%;
-	height: 70px;
 	background-color: #eeeeee;
-	bottom:0;
 	text-align: center;
-	padding-top: 10px;
-	margin: 225px 0 0 0;
-	font-size: .85em;
-
-
+	font-size: 1em;
+	padding-top: 20px;
 }
+	
+
+* {
+	margin: 0;
+	}
+
+html, body {
+	height: 100%;
+	}
+
+
+.footer, .push {
+	height:4em;
+	margin:0;
+	margin-bottom: -20px;
+
+	}
+
+
+	
 
 
 /*MEDIA QUERIES*/
