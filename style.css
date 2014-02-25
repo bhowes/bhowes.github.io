@@ -310,6 +310,16 @@ div.logo a {
 	background: url(http://www.trustii.com/trustii/images/favicon_fb.png);
 }
 
+.response {
+	font-family: 'Karla', sans-serif;
+	color:#666666;
+	line-height: 1.6em;	
+	text-decoration: none;
+	text-align: center;
+	padding-top: 1em
+
+}
+
 
 /* Insert Arrow as placeholder in contact form*/
 input[type="text"]:-moz-placeholder{
