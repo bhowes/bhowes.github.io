@@ -390,8 +390,9 @@ label {
 	width:100%;
 	background-color: #eeeeee;
 	text-align: center;
-	font-size: 1em;
+	font-size: .9em;
 	padding-top: 20px;
+	padding-bottom: 10px;
 }
 	
 
@@ -407,7 +408,7 @@ html, body {
 .footer, .push {
 	height:4em;
 	margin:0;
-	margin-bottom: -20px;
+
 
 	}
 
