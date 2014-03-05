@@ -33,6 +33,8 @@ li {
 		height: 100%;
 		margin: 0 auto -5em;
 		padding-top:2em;
+		padding-right: 2em;
+		padding-left: 2em;
 	}
 
 #main {
