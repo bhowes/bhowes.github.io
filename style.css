@@ -173,7 +173,7 @@ div.logo a {
 	list-style-type: none;
 	font-family: 'Karla', sans-serif;
 	display: inline-block;
-	color: #ababab;
+
 
 }
 
@@ -184,7 +184,11 @@ div.logo a {
 	list-style-type: none;
 	font-family: 'Karla', sans-serif;
 	display: inline-block;
-	color: #ababab;
+
+}
+
+.gray{
+		color: #ababab;
 }
 
 .panorama{
