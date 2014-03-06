@@ -35,7 +35,7 @@ li {
 		padding-top:2em;
 		padding-right: 2em;
 		padding-left: 2em;
-		width:100%;
+
 	}
 
 #main {
@@ -440,6 +440,7 @@ html, body {
  	#wrap{
  		padding-right: 12%;
 		padding-left: 12%;
+		width:100%;
  	}
 	.centeredlogo {
 		margin: 0 auto;
