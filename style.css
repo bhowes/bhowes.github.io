@@ -460,7 +460,6 @@ html, body {
 
 	.navbuttons li{
 		float: none;
-		padding:10px 0 10px 0;
 		background-color: #d3d3d3;
 		border: solid;
 		border-color: white;
@@ -483,6 +482,8 @@ html, body {
 		cursor:pointer;
 		color: #ffffff;
 		display:block;
+		padding: 10px 0 10px 0;
+
 	}
 
 	.button{
