@@ -254,6 +254,7 @@ div.logo a {
 	color:black;
 	line-height: 1.6em;	
 	z-index: 10000;
+	clear:right;
 }
 
 
