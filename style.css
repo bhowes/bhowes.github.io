@@ -482,6 +482,7 @@ html, body {
 	.activebutton{
 		cursor:pointer;
 		color: #ffffff;
+		display:block;
 	}
 
 	.button{
