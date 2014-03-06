@@ -532,12 +532,10 @@ html, body {
 		border: 1px solid #003d79;
 	}
 
-/*THIS IS TO PUSH THE FOOTER BELOW THE NEXT AND PREVIOUS BUTTONS */
 
 
-	#footer{
-		width:100%;
-	}
+
+
 
 }
 	
@@ -548,6 +546,12 @@ html, body {
  		padding-right: 12%;
 		padding-left: 12%;
 		width:100%;
+
+	}
+
+	#footer{
+		width:100%;
+	}
 
 
 }
