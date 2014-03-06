@@ -571,6 +571,14 @@ html, body {
 		margin: 0 auto;
 	}
 
+.previousbutton{
+	margin-right: 0;
+}
+
+.nextbutton{
+	margin-left:0;
+}
+
 
 }
 
