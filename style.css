@@ -393,9 +393,10 @@ label {
 	width:100%;
 	background-color: #eeeeee;
 	text-align: center;
-	font-size: .9em;
+	font-size: .8em;
 	padding-top: 20px;
 	padding-bottom: 10px;
+	text-transform: uppercase;
 }
 	
 
