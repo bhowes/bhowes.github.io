@@ -240,7 +240,7 @@ div.logo a {
 .aboutphoto{
 	position: relative;
 	float: left;
-	padding: 0 2em 12em 0;
+	padding: 0 2em 0 0;
 	cursor: none;
 	height: 688px;
 }
