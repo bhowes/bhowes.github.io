@@ -476,6 +476,7 @@ html, body {
 	.button:hover{
 		cursor:pointer;
 		color: #012059;
+		display:block;
 	}
 
 	.activebutton{
