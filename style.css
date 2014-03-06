@@ -572,11 +572,13 @@ html, body {
 	}
 
 .previousbutton{
-	margin-right: 2px;
+	margin-right: 5px;
+	letter-spacing: 0;
 }
 
 .nextbutton{
-	margin-left:2px;
+	margin-left:5px;
+	letter-spacing: 0;
 }
 
 
