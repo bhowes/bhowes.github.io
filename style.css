@@ -541,7 +541,7 @@ html, body {
 	
 
 /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 360px) and (orientation: portrait){
+@media screen and (max-device-width: 420px) and (orientation: portrait){
   	#wrap{
  		padding-right: 12%;
 		padding-left: 12%;
