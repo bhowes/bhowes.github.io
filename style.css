@@ -485,6 +485,7 @@ html, body {
 
 	.button{
 		color: #012059;
+		display: block;
 	}
 
 	.aboutphoto {
