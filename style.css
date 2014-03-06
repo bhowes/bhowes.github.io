@@ -268,7 +268,7 @@ div.logo a {
 	float: left;
 	margin-bottom: 50px;
 	line-height: .1;
-	display:block;
+	clear: right;
 }
 
 .plainbutton:hover{
