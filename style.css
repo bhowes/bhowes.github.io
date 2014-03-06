@@ -437,10 +437,10 @@ html, body {
  		text-align: center;
  		padding-top: 1em;
  	}
- 	#wrap{
+ 	/* #wrap{
  		padding-right: 12%;
 		padding-left: 12%;
-		width:100%;
+		width:100%;  WORKS ON S4 BUT NOT TABLET*/
  	}
 	.centeredlogo {
 		margin: 0 auto;
