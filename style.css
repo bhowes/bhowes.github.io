@@ -235,7 +235,7 @@ div.logo a {
 	width: 100%;
 	float:left;
 	padding: 5em 0 7em 0;
-	z-index: 10000;
+
 }
 
 .aboutphoto{
@@ -244,6 +244,7 @@ div.logo a {
 	padding: 0 2em 0 0;
 	cursor: none;
 	height: 688px;
+	z-index: 10000;
 }
 
 #abouttext{
