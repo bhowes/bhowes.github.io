@@ -242,7 +242,6 @@ div.logo a {
 	position: relative;
 	float: left;
 	padding: 0 2em 0 0;
-	cursor: none;
 	height: 400px;
 
 
@@ -495,7 +494,7 @@ html, body {
 		margin: -4em 0 2em 0;
 		padding:0;
 		height: auto;
-		cursor: display;
+
 		
 	}
 
