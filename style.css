@@ -430,6 +430,16 @@ html, body {
 /*MEDIA QUERIES*/
  @media only screen and (max-width: 800px) {
 
+ 		.navbuttons li{
+		float: none;
+		background-color: #d3d3d3;
+		border: solid;
+		border-color: white;
+		border-radius:1em;
+		display:block;
+		padding:0;
+	}
+
  	p{
  		color:#666666;
  	}
@@ -441,7 +451,7 @@ html, body {
  		padding-right: 12%;
 		padding-left: 12%;
 		width:100%;  WORKS ON S4 BUT NOT TABLET*/
- 	}
+ 	
 	.centeredlogo {
 		margin: 0 auto;
 		height: 100px;
@@ -465,15 +475,7 @@ html, body {
 
 	}
 
-	.navbuttons li{
-		float: none;
-		background-color: #d3d3d3;
-		border: solid;
-		border-color: white;
-		border-radius:1em;
-		display:block;
-		padding:0;
-	}
+
 
 	#navigation{
 		border: none;
