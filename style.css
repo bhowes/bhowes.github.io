@@ -97,7 +97,7 @@ li {
 
 .navbuttons li{
 	float: left;
-	padding:0 0 0 0px;
+	padding:0 0 0 40px;
 	font-family: 'Karla', sans-serif;
 }
 
@@ -465,6 +465,7 @@ html, body {
 		border-color: white;
 		border-radius:1em;
 		display:block;
+		padding:0;
 	}
 
 	#navigation{
