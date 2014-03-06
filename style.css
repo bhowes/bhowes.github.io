@@ -443,6 +443,7 @@ html, body {
  	p{
  		color:#666666;
  	}
+ 	
  	h1{
  		text-align: center;
  		padding-top: 1em;
@@ -524,10 +525,17 @@ html, body {
 		border: 1px solid #003d79;
 	}
 
-#footer{
-	width:100%;
+	#footer{
+		width:100%;
+	}
+
 }
 	
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  
+}
 
 
 
