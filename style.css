@@ -162,14 +162,19 @@ div.logo a {
 
 }
 
+.pushdown{
+	padding: 10px;
+	text-align: center
+}
+
 .nextbutton{
 	color: #012059;
 	text-decoration: none;
-	float: right;
 	margin-bottom: 15px;
+	margin-right: 15px;
 	list-style-type: none;
 	font-family: 'Karla', sans-serif;
-	display: inline;
+	display: inline-block;
 	color: #666666;
 
 }
@@ -177,11 +182,10 @@ div.logo a {
 .previousbutton{
 	color: #012059;
 	text-decoration: none;
-	float: left;
 	margin-bottom: 15px;
 	list-style-type: none;
 	font-family: 'Karla', sans-serif;
-	display: inline;
+	display: inline-block;
 	color: #666666;
 }
 
@@ -523,9 +527,7 @@ html, body {
 	}
 
 /*THIS IS TO PUSH THE FOOTER BELOW THE NEXT AND PREVIOUS BUTTONS */
-	.pushdown{
-		padding: 10px;
-	}
+
 
 	#footer{
 		width:100%;
