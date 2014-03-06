@@ -550,7 +550,8 @@ html, body {
 	}
 
 	#footer{
-		width:420px;
+		width:440px;
+		margin: 0 auto;
 	}
 
 
