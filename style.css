@@ -488,6 +488,7 @@ html, body {
 	.button{
 		color: #012059;
 		display: block;
+		padding: 10px 0 10px 0;
 	}
 
 	.aboutphoto {
