@@ -524,7 +524,7 @@ html, body {
 
 /*THIS IS TO PUSH THE FOOTER BELOW THE NEXT AND PREVIOUS BUTTONS */
 	.pushdown{
-		margin: 10px;
+		padding: 10px;
 	}
 
 	#footer{
