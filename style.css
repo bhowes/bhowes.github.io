@@ -173,6 +173,7 @@ div.logo a {
 	list-style-type: none;
 	font-family: 'Karla', sans-serif;
 	display: inline-block;
+	text-transform: uppercase;
 
 
 }
@@ -184,11 +185,12 @@ div.logo a {
 	list-style-type: none;
 	font-family: 'Karla', sans-serif;
 	display: inline-block;
+	text-transform: uppercase;
 
 }
 
 .gray{
-		color: #ababab;
+		color: #979797;
 }
 
 .panorama{
