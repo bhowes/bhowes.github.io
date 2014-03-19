@@ -565,8 +565,8 @@ html, body {
 /* #### Mobile Phones Portrait Samsung Galaxy #### */
 @media screen and (max-device-width: 420px) and (orientation: portrait){
   	#wrap{
- 		padding-right: 8%;
-		padding-left: 8%;
+ 		padding-right: 12%;
+		padding-left: 12%;
 		width:100%;
 
 	}
@@ -574,7 +574,7 @@ html, body {
 	#footer{
 
 		margin: 0 auto;
-		width: 40em;
+		width: 35em;
 	}
 
 
@@ -588,38 +588,72 @@ html, body {
 	letter-spacing: 0;
 }
 
-
 }
 
-/* #### iPhone5 #### */
-@media screen and (max-device-width: 360px) and (orientation: portrait) {
-	#wrap {
-		width:100%;
-		padding-right: 20%;
+/* #### Mobile Phones Portrait iPhone#### */
+@media screen and (max-device-width: 320px) and (orientation: portrait){
+  	#wrap{
+ 		padding-right: 20%;
 		padding-left: 20%;
-
-	}
-
-
-
-}
-
-@media screen and (max-device-width: 568px) and (orientation: landscape) {
-	#footer{
-		width:568px;
-		margin: 0 auto;
-	}
-
-	#wrap {
 		width:100%;
 
+	}
+
+	#footer{
+
+		margin: 0 auto;
+		width: 140%;
+	}
+
+	.nextbutton{
+	margin-bottom: 40px;
+	margin-left: 5px;
+	letter-spacing: 0;
+	font-size: 1em;
+
 
 	}
 
+	.previousbutton{
+	margin-bottom: 40px;
+	margin-right: 5px;
+	letter-spacing: 0;
+	font-size: 1em;
 
 
-
+	}
 }
 
+/* #### Mobile Phones Landscape iPhone#### */
+@media only screen and (max-device-width : 480px) and (orientation : landscape){
+ 	#wrap{
+ 		padding-right: 20%;
+		padding-left: 20%;
+		width:100%;
 
+	}
+
+	#footer{
+
+		margin: 0 auto;
+		width: 140%;
+	}
+
+	.nextbutton{
+	margin-bottom: 40px;
+	margin-left: 5px;
+	letter-spacing: 0;
+	font-size: .9em;
+
+
+	}
+
+	.previousbutton{
+	margin-bottom: 40px;
+	margin-right: 5px;
+	letter-spacing: 0;
+	font-size: .9em;
+
+
+	}
 
