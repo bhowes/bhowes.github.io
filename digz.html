@@ -83,11 +83,10 @@
     </footer>
 
 <script type="text/javascript">
-jQuery(document).ready(function($) {
+$(window).load(function() {
+//Below is Support for Swiping the Homepage Feature (using custom complied version of jQuery Mobile v1.2)
 
-	//Below is Support for Swiping the Homepage Feature (using custom complied version of jQuery Mobile v1.2)
-
-    		if(jquery.mobile.custom){
+    		if(jQuery.support.touch){
 
 		    		$('#slider').nivoSlider({
 			    		effect: 'slideInLeft',
