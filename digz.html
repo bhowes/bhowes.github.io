@@ -12,7 +12,9 @@
 		<link rel="stylesheet" href="nivo-slider.css" type="text/css" />
 		<link rel="stylesheet" href="themes/default/default.css" type="text/css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+		<script src="jquery.mobile.custom.js" type="text/javascript"></script>
 		<script src="jquery.nivo.slider.js" type="text/javascript"></script>
+
 		<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />
 
 
@@ -81,8 +83,51 @@
     </footer>
 
 <script type="text/javascript">
-$(window).load(function() {
-    $('#slider').nivoSlider();
+jQuery(document).ready(function($) {
+
+	//Below is Support for Swiping the Homepage Feature (using custom complied version of jQuery Mobile v1.2)
+
+    		if(jquery.mobile.custom){
+
+		    		$('#slider').nivoSlider({
+			    		effect: 'slideInLeft',
+			    		animSpeed: 250, // Slide transition speed
+			    		pauseTime: 9000 // How long each slide will show
+			    	});
+
+                          //First, Remove Hover Next and Previous Arrows on Touch Devices. Don't need them really.
+
+		    		$('a.nivo-nextNav').css('visibility', 'hidden');
+		    		$('a.nivo-prevNav').css('visibility', 'hidden');
+
+		    		//Then Finish Up swipeleft and swiperight
+	    			$('#slider').bind( 'swipeleft', function( e ) {
+		    			$('#slider img').attr("data-transition","slideInLeft");
+		    			$('a.nivo-nextNav').trigger('click');
+		    			e.stopImmediatePropagation();
+		    			return false; } 	
+		    		);  
+
+		    		$('#slider').bind( 'swiperight', function( e ) {
+			    		$('#slider img').attr("data-transition","slideInRight");
+			    		$('a.nivo-prevNav').trigger('click');
+			    		e.stopImmediatePropagation();
+			    		return false; } 
+
+			    	); 
+
+	    	}
+
+	    	else { 
+
+		    		$('#slider').nivoSlider({
+			    		effect: 'fade',
+			    		animSpeed: 250, // Slide transition speed
+			    		pauseTime: 9000 // How long each slide will show	
+			    	});
+
+		    	}
+
 });
 </script>
 
